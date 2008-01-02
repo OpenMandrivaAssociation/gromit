@@ -11,6 +11,7 @@ Source0: http://www.home.unix-ag.org/simon/gromit/%{name}-%{cvs}.tar.bz2
 License: GPL
 Group: System/X11
 Url: http://www.home.unix-ag.org/simon/gromit/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: gtk+2-devel
 
 %description
