@@ -1,14 +1,16 @@
 %define name gromit
 %define version 0
 %define cvs 20041213
-%define release %mkrel %cvs.2
+%define release %mkrel %cvs.3
 
 Summary: Paint annotations on top of the X screen
 Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://www.home.unix-ag.org/simon/gromit/%{name}-%{cvs}.tar.bz2
-License: GPL
+#gw work around for bug with lines filling all the screen
+Patch: gromit-20041213-no-history.patch
+License: GPLv2+
 Group: System/X11
 Url: http://www.home.unix-ag.org/simon/gromit/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -22,6 +24,7 @@ It is useful for recording presentations with xvidcap.
 
 %prep
 %setup -q -n %name-%cvs
+%patch -p1
 
 %build
 %make
