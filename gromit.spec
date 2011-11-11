@@ -1,7 +1,7 @@
 %define name gromit
 %define version 0
 %define cvs 20041213
-%define release %mkrel %cvs.3
+%define release %mkrel %cvs.4
 
 Summary: Paint annotations on top of the X screen
 Name: %{name}
