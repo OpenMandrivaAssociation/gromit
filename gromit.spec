@@ -9,7 +9,8 @@ Version: %{version}
 Release: %{release}
 Source0: http://www.home.unix-ag.org/simon/gromit/%{name}-%{cvs}.tar.bz2
 #gw work around for bug with lines filling all the screen
-Patch: gromit-20041213-no-history.patch
+Patch0: gromit-20041213-no-history.patch
+Patch1: gromit-20041213-fix-linking.patch
 License: GPLv2+
 Group: System/X11
 Url: http://www.home.unix-ag.org/simon/gromit/
@@ -24,7 +25,7 @@ It is useful for recording presentations with xvidcap.
 
 %prep
 %setup -q -n %name-%cvs
-%patch -p1
+%apply_patches
 
 %build
 %make
