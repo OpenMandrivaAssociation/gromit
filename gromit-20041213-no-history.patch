@@ -1,0 +1,21 @@
+diff -p -up gromit-20041213/gromit.c~ gromit-20041213/gromit.c
+--- gromit-20041213/gromit.c~	2004-12-13 11:58:44.000000000 +0100
++++ gromit-20041213/gromit.c	2009-11-09 15:15:13.000000000 +0100
+@@ -731,7 +731,7 @@ paintto (GtkWidget *win,
+                                 &coords, &nevents);
+ 
+   /* g_printerr ("Got %d coords\n", nevents); */
+-  if (coords)
++  /*  if (coords)
+     {
+       for (i=0; i < nevents; i++)
+         {
+@@ -762,7 +762,7 @@ paintto (GtkWidget *win,
+ 
+       data->motion_time = coords[nevents-1]->time;
+       g_free (coords);
+-    }
++      } */
+ 
+   /* always paint to the current event coordinate. */
+   gdk_event_get_axis ((GdkEvent *) ev, GDK_AXIS_PRESSURE, &pressure);
