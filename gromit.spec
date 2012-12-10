@@ -41,3 +41,37 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog README
 %_bindir/%name
+
+
+%changelog
+* Fri Nov 11 2011 GÃ¶tz Waschk <waschk@mandriva.org> 0-20041213.4mdv2012.0
++ Revision: 730015
+- fix linking
+- rebuild
+
+* Mon Nov 09 2009 GÃ¶tz Waschk <waschk@mandriva.org> 0-20041213.3mdv2010.1
++ Revision: 463530
+- update license
+- work around a bug that filled the screen with lines
+
+* Wed Jan 02 2008 Olivier Blin <blino@mandriva.org> 0-20041213.2mdv2008.1
++ Revision: 140742
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Wed Jul 25 2007 GÃ¶tz Waschk <waschk@mandriva.org> 0-20041213.2mdv2008.0
++ Revision: 55231
+- Import gromit
+
+
+
+* Thu Jul 20 2006 Götz Waschk <waschk@mandriva.org> 0-20041213.2mdv2007.0
+- Rebuild
+
+* Mon Apr 17 2006 Götz Waschk <waschk@mandriva.org> 0-20041213.1mdk
+- rebuild
+
+* Tue Apr 12 2005 Götz Waschk <waschk@linux-mandrake.com> 0-0.20041213.1mdk
+- initial package
