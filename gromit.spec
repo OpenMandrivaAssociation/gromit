@@ -25,7 +25,7 @@ It is useful for recording presentations with xvidcap.
 
 %prep
 %setup -q -n %name-%cvs
-%apply_patches
+%autopatch -p1
 
 %build
 %make
