@@ -15,6 +15,7 @@ License: GPLv2+
 Group: System/X11
 Url: https://www.home.unix-ag.org/simon/gromit/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	make
 BuildRequires: gtk+2-devel
 
 %description
