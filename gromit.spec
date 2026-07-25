@@ -1,7 +1,7 @@
 %define name gromit
 %define version 0
 %define cvs 20041213
-%define release %mkrel %cvs.4
+%define release %cvs.5
 
 Summary: Paint annotations on top of the X screen
 Name: %{name}
@@ -68,11 +68,11 @@ rm -rf $RPM_BUILD_ROOT
 
 
 
-* Thu Jul 20 2006 Götz Waschk <waschk@mandriva.org> 0-20041213.2mdv2007.0
+* Thu Jul 20 2006 Gï¿½tz Waschk <waschk@mandriva.org> 0-20041213.2mdv2007.0
 - Rebuild
 
-* Mon Apr 17 2006 Götz Waschk <waschk@mandriva.org> 0-20041213.1mdk
+* Mon Apr 17 2006 Gï¿½tz Waschk <waschk@mandriva.org> 0-20041213.1mdk
 - rebuild
 
-* Tue Apr 12 2005 Götz Waschk <waschk@linux-mandrake.com> 0-0.20041213.1mdk
+* Tue Apr 12 2005 Gï¿½tz Waschk <waschk@linux-mandrake.com> 0-0.20041213.1mdk
 - initial package
